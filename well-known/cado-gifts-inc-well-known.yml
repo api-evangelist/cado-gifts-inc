@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://cadogifting.com/.well-known/
+host: https://cadogifting.com
+note: >-
+  cadogifting.com is a Shopify-hosted storefront. The 200 well-known documents
+  below are Shopify's Customer Account API OIDC/OAuth discovery documents served
+  under the store's own host (Shopify shop id 50401706150). They describe the
+  customer authentication surface of the store, not a first-party Cado Gifts API.
+  Note the advertised scopes include customer-account-api:full and
+  customer-account-mcp-api:full (Shopify's customer-account MCP surface).
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  content_type: application/json
+  file: cado-gifts-inc-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  content_type: application/json
+  file: cado-gifts-inc-oauth-authorization-server.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

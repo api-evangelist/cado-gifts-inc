@@ -1,8 +1,27 @@
 aid: cado-gifts-inc
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cado-gifts-inc.png
 name: Cado Gifts, Inc.
-description: Cado Gifts, Inc. is a company surfaced as a portfolio company of 500-global and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Cado Gifts, Inc. (CADO Gifting) is a luxury and corporate gifting company operating a
+  Shopify-hosted direct-to-consumer storefront at cadogifting.com, serving the UAE and
+  international markets with curated executive, host, and occasion gift collections plus a
+  corporate/bulk gifting program. The business runs on Shopify (customer accounts, checkout,
+  and blog/journal content) rather than a first-party public API; it was surfaced as a
+  portfolio company of 500 Global and added to the API Evangelist network for enrichment.
+  No developer program, OpenAPI, or public API documentation is published; the only machine
+  surface discovered is Shopify's Customer Account OIDC/OAuth well-known documents served
+  under the store's own host.
 url: https://raw.githubusercontent.com/api-evangelist/cado-gifts-inc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Gifts
+- Corporate Gifting
+- Luxury Goods
+- E-Commerce
+- Retail
+- Shopify
+- UAE
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cado-gifts-inc-domain-security.yml
+- type: WellKnown
+  url: well-known/cado-gifts-inc-well-known.yml
 - type: Website
   url: https://cadogifting.com
+- type: Blog
+  url: https://cadogifting.com/en-ae/blogs/blogs
+- type: PrivacyPolicy
+  url: https://cadogifting.com/en-ae/policies/privacy-policy
+- type: TermsOfService
+  url: https://cadogifting.com/en-ae/policies/terms-of-service
+- type: Login
+  url: https://cadogifting.com/en-ae/account/login
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
